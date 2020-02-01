@@ -46,7 +46,7 @@
       <h1>Перфораторы</h1>
       <section>
         <ul>
-          <li><a href="index.html"><img src="" alt="Главная страница"></a></li>
+          <li><a href="index.html"><img src="img/icon-home.svg" alt="Главная страница"></a></li>
           <li><a href="#">Каталог</a></li>
           <li><a href="#">Инструмент</a></li>
           <li><a>Перфораторы</a></li>
@@ -54,18 +54,48 @@
       </section>
 
       <section>
-        <ul>
-          <li>BOSCH</li>
-          <li>Интерскол</li>
-          <li>Makita</li>
-          <li>Dewalt</li>
-          <li>Hitachi</li>
-        </ul>
-        <ul>
-          <li>Аккумуляторные</li>
-          <li>Сетевые</li>
-        </ul>
-        <button>Показать</button>
+        <h2>Фильтр:</h2>
+        <form method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Производители:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" id="filter-bosch" name="bosch" checked>
+                <label for="filter-bosch">BOSCH</label>
+              </li>
+              <li>
+                <input type="checkbox" id="filter-interskol" name="interskol">
+                <label for="filter-interskol">Интерскол</label>
+              </li>
+              <li>
+                <input type="checkbox" id="filter-makita" name="makita" checked>
+                <label for="filter-makita"> Makita</label>
+              </li>
+              <li>
+                <input type="checkbox" id="filter-dewalt" name="dewalt">
+                <label for="filter-dewalt">Dewalt</label>
+              </li>
+              <li>
+                <input type="checkbox" id="filter-hitachi" name="hitachi">
+                <label for="filter-hitachi">Hitachi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Питание:</legend>
+            <ul>
+              <li>
+                <input type="radio" id="filter-battery" name="power" value="battery" checked>
+                <label for="filter-battery">Аккумуляторные</label>
+              </li>
+              <li>
+                <input type="radio" id="filter-mains" name="power" value="mains">
+                <label for="filter-mains">Сетевые</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">Показать</button>
+        </form>
       </section>
 
       <section>
@@ -166,5 +196,13 @@
         </div>
       </div>
     </footer>
+    <section>
+      <h3>Товар добавлен в корзину!</h3>
+      <ul>
+        <li><a href="#">Оформить заказ</a></li>
+        <li><a href="#">Продолжить покупки</a></li>
+      </ul>
+      <button type="button">Закрыть</button>
+    </section>
   </body>
 </html>
