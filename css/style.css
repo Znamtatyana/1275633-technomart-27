@@ -1,0 +1,408 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Cuprum", sans-serif;
+  color: #000000;
+}
+
+.inner-page {
+  font-family: "PTSans", sans-serif;
+  color: #000000;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+h1 {
+  color: #32425c;
+  font-size: 30px;
+  line-height: 30px;
+  background-color: #f2f6f8;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+a {
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+}
+
+.inner-page a{
+  color: #000000;
+}
+
+.header {
+  background-color: #f3f7f8;
+}
+
+.header-top {
+  font-size: 17px;
+  line-height: 18px;
+  background-color: #293449;
+}
+
+.search input {
+  font: inherit;
+  border: none;
+}
+
+.bookmarks a:hover,
+.basket a:hover {
+  background-color: #212a3a;
+}
+
+.bookmarks a:active,
+.basket a:active {
+  opacity: 60%;
+  background-color: #161d29;
+}
+
+.checkout {
+  background-color: #63a63e;
+}
+
+.checkout a:hover {
+  background-color: #5fbb2d;
+}
+
+.checkout a:active {
+  opacity: 50%;
+  background-color: #518534;
+}
+
+.header-text {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+  color: #ee3643;
+}
+
+.header-phone {
+  font-size: 21px;
+  line-height: 21px;
+  color: #ee3643;
+  border: 3px solid #ffffff;
+}
+
+.header-address {
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.user-navigation,
+.site-navigation,
+.product-list,
+.manufacturer-list {
+  list-style: none;
+}
+
+.user-navigation a {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.user-navigation a:hover {
+  color: #ee3643;
+}
+
+.user-navigation a:active {
+  opacity: 30%;
+}
+
+.site-navigation {
+  font-size: 17px;
+  line-height: 17px;
+  background-color: #32425c;
+  border-bottom: 5px solid #293449;
+}
+
+.site-navigation a:hover {
+  background-color: #293449;
+}
+
+.site-navigation a:active {
+  opacity: 50%;
+  background-color: #293449;
+}
+
+.offer-list {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.offer-material {
+  background-color: #f6b22d;
+}
+
+.offer-tool {
+  background-color: #3bbce3;
+}
+
+.offer-eguipment {
+  background-color: #dc91d8;
+}
+
+.offer-discount {
+  background-color: #8ed78f;
+}
+
+.offer-delivery {
+  background-color: #ffc047;
+}
+
+.offer-list a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.offer-list a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.offer-list a:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.product-text,
+.manufacturer-text {
+  color: #32425c;
+  background-color: #f9f5f0;
+}
+
+.offer-slider a,
+.product-text a,
+.manufacturer-text a,
+.about-us a {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #ee3643;
+}
+
+.offer-slider a:hover {
+  background-color: #ca2c37;
+}
+
+.offer-slider a:active {
+  background-color: #ba2732;
+}
+
+.product-list {
+  font-family: "PTSans", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.product-list a {
+  color: #000000;
+  font-size: 18px;
+  line-height: 20px;
+  text-transform: none;
+  text-align: center;
+}
+
+.old-price {
+  color: #a9a9a9;
+  text-decoration: line-through;
+}
+
+.price {
+  color: #ffffff;
+  background-color: #ee3643; /* Временно */
+}
+
+.product-list li,
+.manufacturer-list li {
+  border: 1px solid #eaeaea;
+}
+
+.service {
+  background-color: #f4f8fa;
+}
+
+.service-list {
+  list-style: none;
+}
+
+.service-list button {
+  border: none;
+  color: #ffffff;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 700;
+  background-color: #32425c;
+}
+
+.service-list button:hover {
+  background-color: #293449;
+}
+
+.service-list button:active {
+  color: #32425c;
+  background-color: #ffffff;
+}
+
+.service p,
+.about-us p{
+  font-family: "PTSans", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.delivery-company {
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.main-footer {
+  color: #f1f5f7;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: #32425c;
+}
+
+.footer-menu,
+.footer-offer {
+  list-style: none;
+}
+
+.footer-offer a,
+.footer-mail a,
+.footer-copyright a {
+  color: #ffd180;
+}
+
+.footer-menu a:hover,
+.footer-offer a:hover,
+.footer-mail a:hover,
+.footer-copyright a:hover {
+  text-decoration: underline;
+}
+
+.footer-menu a:active,
+.footer-offer a:active {
+  opacity: 50%;
+}
+
+.footer-mail a:active,
+.footer-copyright a:active{
+  color: #ee3643;
+}
+
+
+.footer-bottom {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 18px;
+  background-color: #293449;
+}
+
+.footer-social {
+  list-style: none;
+}
+
+.modal-feedback {
+  font-size: 18px;
+  line-height: 18px;
+  border-top: 7px solid #ff5357;
+}
+
+.form-feedback input[type="text"],
+.form-feedback input[type="email"],
+.form-feedback textarea {
+  font-family: "PTSans", sans-serif;
+  color: #000000;
+  font-size: 13px;
+  line-height: 18px;
+  border: 2px solid #dee3e4;
+}
+
+.form-feedback button[type="submit"] {
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: #ee3643;
+}
+
+.user-name {
+  color: #000000;
+  font-size: 21px;
+  line-height: 21px;
+  background-color: #ffffff;
+}
+
+.user-item li:first-child {
+  list-style: none;
+}
+
+.user-item a {
+  color: #32425c;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: underline;
+}
+
+.user-item a:hover {
+  color: #ee3643;
+}
+
+.user-item a:active {
+  color: #32425c;
+  opacity: 30%;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.filter ul {
+  list-style: none;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.modal-buy {
+  border-top: 7px solid #ee3643;
+}
+
+.modal-buy h3 {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.modal-buy ul {
+  list-style: none;
+  background-color: #f1f1f1;
+}
+
+.modal-buy a {
+  background-color: #ee3643;
+}
