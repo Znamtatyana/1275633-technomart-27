@@ -13,14 +13,27 @@ body {
   text-transform: uppercase;
 }
 
-h1 {
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.page-title {
   color: #32425c;
   font-size: 30px;
   line-height: 30px;
   background-color: #f2f6f8;
 }
 
-h2 {
+.product-text h2,
+.manufacturer-text h2,
+.service h2,
+.delivery h2,
+.about-us-text h2,
+.about-us-contact h2 {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -46,14 +59,22 @@ a {
   background-color: #293449;
 }
 
-input[type="search"] {
+.search input {
   font: inherit;
   background: transparent;
   border: none;
 }
 
-input[type="search"]::placeholder {
+.search input::placeholder {
   color: #ffffff;
+}
+
+.search input:hover {
+  background-color: #212a3a;
+}
+
+.search input:focus {
+  background-color: #ffffff;
 }
 
 .bookmarks a:hover,
@@ -179,10 +200,6 @@ input[type="search"]::placeholder {
 
 .offer-list a:active {
   background-color: rgba(0, 0, 0, 0.3);
-}
-
-.slider-drill {
-  background-image: url("img/slider_1.jpg");
 }
 
 .product-text,
@@ -402,6 +419,11 @@ input[type="search"]::placeholder {
 
 .breadcrumbs {
   list-style: none;
+}
+
+.filters h2 {
+  font-size: 13px;
+  line-height: 18px;
 }
 
 .filter fieldset {
