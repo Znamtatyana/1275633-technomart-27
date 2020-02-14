@@ -9,30 +9,33 @@
   <body>
     <header class="header">
         <div class="header-top">
-          <a><img src="img/logo_texnomart.png" width="220" height="47" alt="Логотип магазина Техномарт"></a>
-          <form class="search">
-            <input type="search" placeholder="Поиск:">
-          </form>
-          <p class="bookmarks"><a href="#">Закладки:</a></p>
-          <p class="basket"><a href="#">Корзина:</a></p>
-          <p class="checkout"><a href="#">Оформить заказ:</a></p>
+          <div class="header-top-wrapper">
+            <a><img src="img/logo_texnomart.png" width="220" height="47" alt="Логотип магазина Техномарт"></a>
+            <form class="search">
+              <input type="search" placeholder="Поиск:">
+            </form>
+            <p class="bookmarks"><a href="#">Закладки:</a></p>
+            <p class="basket"><a href="#">Корзина:</a></p>
+            <p class="checkout"><a href="#">Оформить заказ:</a></p>
+          </div>
         </div>
-        <p class="header-text">Интернет-магазин
-          строительных материалов
-          и инструментов для ремонта
-        </p>
-        <a href="tel:+78125550555" class="header-phone">+7 (812)555-05-55</a>
-        <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <ul class="user-navigation">
-          <li>
-            <a href="#">Войти</a>
-          </li>
-          <li>
-            <a href="#">Регистрация</a>
-          </li>
-        </ul>
+        <div class="container">
+          <p class="header-text">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+          <div class="header-contact">
+            <a href="tel:+78125550555" class="header-phone">+7 (812)555-05-55</a>
+            <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          </div>
+          <ul class="user-navigation">
+            <li>
+              <a href="#">Войти</a>
+            </li>
+            <li>
+              <a href="#">Регистрация</a>
+            </li>
+          </ul>
+        </div>
 
-      <nav>
+      <nav class="main-navigation">
         <ul class="site-navigation">
           <li><a>Главная</a></li>
           <li><a href="#">Компания</a></li>
@@ -165,10 +168,24 @@
             <button>Кредит</button>
           </li>
         </ul>
-        <div class="delivery">
-          <h2>Доставка</h2>
-          <p>Мы с удовольствием досавим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,
-            поднимая его на ваш этаж!</p>
+        <div class="service-slider">
+          <div class="delivery">
+            <h2>Доставка</h2>
+            <p>Мы с удовольствием досавим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,
+              поднимая его на ваш этаж!</p>
+          </div>
+          <div class="guarant">
+            <h2>Гарантия</h2>
+            <p>Если купленный у нас товар поломается или заискрит,
+              а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии.
+              Мы обменяем сгоревший товар на новый.
+              Дом уж восстановите как-нибудь сами.</p>
+          </div>
+          <div class="credit">
+            <h2>Кредит</h2>
+            <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+            <a href="#">Отправить заявку</a>
+          </div>
         </div>
       </section>
 

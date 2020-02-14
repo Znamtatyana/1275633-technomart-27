@@ -57,6 +57,7 @@ a {
   font-size: 17px;
   line-height: 18px;
   background-color: #293449;
+  margin-bottom: 45px;
 }
 
 .search input {
@@ -124,7 +125,8 @@ a {
 .user-navigation,
 .site-navigation,
 .product-list,
-.manufacturer-list {
+.manufacturer-list,
+.pagination-list {
   list-style: none;
 }
 
@@ -211,7 +213,8 @@ a {
 .offer-slider a,
 .product-text a,
 .manufacturer-text a,
-.about-us a {
+.about-us a,
+.credit a {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -303,19 +306,23 @@ a {
 }
 
 .service p,
-.about-us p{
+.about-us p {
   font-family: "PTSans", sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
 
-.delivery h2{
+.service-slider h2{
   color: #32425c;
 }
 
 .delivery-company {
   font-size: 18px;
   line-height: 20px;
+}
+
+.credit a {
+  background-color: #ff5357;
 }
 
 .main-footer {
@@ -421,9 +428,11 @@ a {
   list-style: none;
 }
 
-.filters h2 {
+.filters h2,
+.sorting h2 {
   font-size: 13px;
   line-height: 18px;
+  background-color: #f7f3ec;
 }
 
 .filter fieldset {
@@ -442,6 +451,48 @@ a {
   line-height: 20px;
 }
 
+.filter-price input{
+  text-align: center;
+  border: none;
+  background-color: #f7f3ec;
+}
+
+.sorting {
+  background-color: #f7f3ec;
+}
+
+.sorting a {
+  opacity: 30%;
+}
+
+.pagination-list a {
+  border: 1px solid #e5e5e5;
+}
+
+.pagination-list a:hover {
+  border: 1px solid #bdc6ca;
+}
+
+.pagination-list a:active {
+  border: 1px solid #ee3643;
+}
+
+.pagination-list a:focus {
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.perforator-description h2 {
+  font-family: "Cuprum", sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.perforator-description p {
+  line-height: 24px;
+  text-transform: none;
+}
+
 .modal-buy {
   border-top: 7px solid #ee3643;
 }
@@ -458,4 +509,53 @@ a {
 
 .modal-buy a {
   background-color: #ee3643;
+}
+
+
+.header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+  /* временно для сетки */
+  min-height: 320px;
+  outline: red solid 2px;
+}
+
+.header-top-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 940px;
+  margin: 0 auto;
+    /* временно для сетки */
+  min-height: 42px;
+  outline: purple solid 2px;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 940px;
+  margin: 0 auto;
+  margin-bottom: 45px;
+    /* временно для сетки */
+  min-height: 70px;
+  outline: purple solid 2px;
+}
+
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 940px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  padding-left: 0px;
+    /* временно для сетки */
+  min-height: 60px;
+  outline: purple solid 2px;
+
+
 }

@@ -64,6 +64,17 @@
         <h2>Фильтр:</h2>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
+            <legend>Цена:</legend>
+            <div class="filter-range">
+
+            </div>
+            <div class="filter-price">
+              <input type="text" name="min-price" value="0">
+              <span>-</span>
+              <input type="text" name="max-price" value="30000">
+            </div>
+          </fieldset>
+          <fieldset>
             <legend>Производители:</legend>
             <ul>
               <li>
@@ -103,6 +114,19 @@
           </fieldset>
           <button type="submit">Показать</button>
         </form>
+      </section>
+
+      <section class="sorting">
+        <h2>Сортировка:</h2>
+        <ul class="option-list">
+          <li><a href="#">По цене</a></li>
+          <li><a href="#">По типу</a></li>
+          <li><a href="#">По функционалу</a></li>
+        </ul>
+        <ul class="value-list">
+          <li><a class="size-up" href="#"></a></li>
+          <li><a class="size-down" href="#"></a></li>
+        </ul>
       </section>
 
       <section>
@@ -195,6 +219,22 @@
             <p class="price">12500 p.</p>
           </li>
         </ul>
+      </section>
+
+      <div class="pagination">
+        <ul class="pagination-list">
+          <li><a>1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">Сдедующая</a></li>
+        </ul>
+      </div>
+
+      <section class="perforator-description">
+        <h2>Пара слов о перфораторах</h2>
+        <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+           Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
+           В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
       </section>
     </main>
 
