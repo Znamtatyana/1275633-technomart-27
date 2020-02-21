@@ -41,6 +41,10 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
 }
 
+.header {
+  background-color: #f3f7f8;
+}
+
 .header-top-wrapper {
   display: flex;
   justify-content: space-between;
@@ -49,6 +53,12 @@ input[type="radio"].visually-hidden {
   outline: purple solid 2px;
 }
 
+.header-top {
+  font-size: 17px;
+  line-height: 18px;
+  background-color: #293449;
+  margin-bottom: 45px;
+}
 
 .page-title {
   margin: 0;
@@ -87,17 +97,6 @@ a {
   color: #000000;
 }
 
-.header {
-  background-color: #f3f7f8;
-}
-
-.header-top {
-  font-size: 17px;
-  line-height: 18px;
-  background-color: #293449;
-  margin-bottom: 45px;
-}
-
 .search input {
   box-sizing: border-box;
   width: 270px;
@@ -108,8 +107,6 @@ a {
   border: none;
   outline: none;
 }
-
-
 
 .search input::placeholder {
   color: #ffffff;
@@ -280,13 +277,12 @@ a {
 .offer-list-slider p,
 .offer-list p {
   margin-bottom: 15px;
-
 }
-
 
 .offer-item {
   width: 277px;
   min-height: 123px;
+  margin-bottom: 20px;
   padding-left: 23px;
 }
 
@@ -327,15 +323,6 @@ a {
 
 }
 
-.offer-slider {
-  width: 620px;
-  height: 266px;
-}
-
-.slider-drill {
-  background-image: url(../img/slider_2.jpg);
-}
-
 .offer-list-slider a,
 .offer-list a {
   display: block;
@@ -349,6 +336,7 @@ a {
   border-radius: 3px;
 
 }
+
 .offer-list-slider a:hover,
 .offer-list a:hover {
   background-color: rgba(0, 0, 0, 0.2);
@@ -358,6 +346,46 @@ a {
 .offer-list a:active {
   background-color: rgba(0, 0, 0, 0.3);
 }
+
+
+.offer-slider {
+  width: 595px;
+  padding-top: 27px;
+  padding-left: 25px;
+  padding-bottom: 23px;
+  color: #ffffff;
+  background-color: #32201c;
+}
+
+.offer-slider .title {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.offer-slider p {
+  margin: 0;
+  font-size: 18px;
+  margin-bottom: 125px;
+}
+
+.offer-slider a {
+  display: block;
+  width: 195px;
+  padding: 14px 0;
+}
+ /* временно */
+
+.slider-hammer {
+  display: none;
+}
+
+/* .slider-drill {
+  background-image: url(../img/slider_2.jpg);
+} */
+
+
 
 .product-text h2,
 .manufacturer-text h2 {
@@ -388,6 +416,7 @@ a {
   line-height: 18px;
   text-transform: uppercase;
   background-color: #ee3643;
+  border-radius: 3px;
 }
 
 .offer-slider a:hover {
@@ -420,8 +449,6 @@ a {
   position: relative;
   width: 218px;
   margin-bottom: 20px;
-  /* временно для сетки */
-  height: 318px;
 }
 
 .product-item .flag {
@@ -443,23 +470,25 @@ a {
 
 .product-item .image {
   width: 218px;
-  height: 170px;
-  margin-bottom: 12px;
+  height: 168px;
+  margin-bottom: 8px;
 }
 
 .product-list a {
   color: #000000;
   font-size: 18px;
-  line-height: 20px;
   text-transform: none;
 }
 
 .old-price {
+  margin-top: 16px;
+  margin-bottom: 10px;
   color: #a9a9a9;
   text-decoration: line-through;
 }
 
 .price {
+  margin: 0 auto 18px;
   position: relative;
   width: 80px;
   padding: 11px 30px;
@@ -484,7 +513,7 @@ a {
   top: 0;
   left: 0;
   width: 218px;
-  padding: 40px 0;
+  padding: 45px 0;
   z-index: 10;
 
 }
@@ -497,7 +526,7 @@ a {
   display: block;
   width: 135px;
   margin: 0 auto;
-  margin-bottom: 7px;
+  margin-bottom: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
   font-family: "Cuprum", sans-serif;
@@ -541,6 +570,12 @@ a {
   border-radius: 3px;
 }
 
+.product-item .product-buy {
+  display: none;
+}
+.product-item:hover .product-buy {
+  display: block;
+}
 
 .service {
   background-color: #f4f8fa;
@@ -845,7 +880,7 @@ a {
   margin: 0;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 19px;
+  padding-left: 18px;
   font-size: 13px;
   line-height: 18px;
   background-color: #f7f3ec;
@@ -864,56 +899,6 @@ a {
   line-height: 30px;
   font-weight: 700;
 }
-
-.filter ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  font-size: 15px;
-  line-height: 17px;
-}
-
-.filter-option {
-  margin-bottom: 27px;
-  padding-left: 34px;
-}
-
-.filter-option label {
-  position: relative;
-  display: block;
-}
-
-.filter-input-checkbox + label::before {
-  content: "";
-  position: absolute;
-  top: -3px;
-  left: -34px;
-
-  width: 26px;
-  height: 23px;
-
-  background-image: url("../img/checkbox-off.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.filter-input-checkbox:checked + label::after {
-  content: "";
-  position: absolute;
-  top: -3px;
-  left: -34px;
-
-  width: 26px;
-  height: 23px;
-
-  background-image: url("../img/checkbox-on.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-
-
-
 .filter-slider {
   position: relative;
   width: 220px;
@@ -961,26 +946,114 @@ a {
   background-color: #ffffff;
 }
 
-
 .range {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 
 .range input{
   max-width: 95px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 0;
   text-align: center;
   border: none;
   background-color: #f7f3ec;
+  border-radius: 3px;
+}
+.range::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 105px;
+  width: 10px;
+  height: 1px;
+  background-color: #000000;
 }
 
-.range span {
+/* .range span {
   display: block;
   margin: auto 10px;
+} */
+
+.filter ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 15px;
+  line-height: 17px;
 }
 
+.filter-option {
+  margin-bottom: 27px;
+  padding-left: 34px;
+}
+
+.filter-option label {
+  position: relative;
+  display: block;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -34px;
+
+  width: 26px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -34px;
+
+  width: 26px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-radio + label::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -34px;
+
+  width: 25px;
+  height: 25px;
+
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.filter-input-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -34px;
+
+  width: 25px;
+  height: 25px;
+
+  background-image: url("../img/radio-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.button {
+  font: inherit;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+}
 .sorting {
   background-color: #f7f3ec;
 }
@@ -1101,11 +1174,17 @@ a {
   outline: blue solid 2px;
 }
 
+.offer-wrapper {
+  margin-right: 20px;
+}
+
 .offer-list-slider {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 620px;
   padding-left: 0px;
+  list-style: none;
   /* временно для сетки */
   outline: pink solid 2px;
 }
@@ -1116,6 +1195,7 @@ a {
   justify-content: flex-end;
   align-content: space-between;
   padding-left: 0px;
+  list-style: none;
   /* временно для сетки */
   outline: pink solid 2px;
 }
