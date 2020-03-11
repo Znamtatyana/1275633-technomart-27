@@ -273,6 +273,7 @@ a {
 }
 
 .header-contact {
+  margin-top: -1px;
   width: 270px;
 }
 
@@ -579,16 +580,11 @@ a {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.slider-wrapper {
+.slider-container {
+  position: relative;
   width: 620px;
   min-height: 266px;
   background-color: #32201c;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.slider-container {
-  position: relative;
 }
 
 .arrows {
@@ -598,6 +594,7 @@ a {
   width: 24px;
   height: 44px;
   font-size: 0;
+  z-index: 1;
 }
 
 .arrows-back {
@@ -642,16 +639,21 @@ a {
 
 
 .slider {
-  margin-left: 24px;
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 22px;
   position: relative;
   color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
-.slider-list {
-  margin: 0;
-  padding: 0;
-  padding-top: 20px;
-  list-style: none;
+.slide-hammer {
+  background-image: url("../img/slider_1.jpg");
+}
+
+.slide-drill {
+  background-image: url("../img/slider_2.jpg");
 }
 
 .slider .title {
@@ -703,9 +705,9 @@ a {
 
 .slider-controls {
   position: absolute;
-  left: 270px;
+  left: 295px;
   top: 220px;
-  z-index: 10;
+  z-index: 1;
   font-size: 0;
 }
 
@@ -717,14 +719,6 @@ a {
 #slide-hammer:checked ~ .slider-wrapper #hammer,
 #slide-drill:checked ~ .slider-wrapper #drill {
   display: block;
-}
-
-#slide-hammer:checked ~ .slider-wrapper {
-  background-image: url("../img/slider_1.jpg");
-}
-
-#slide-drill:checked ~ .slider-wrapper {
-  background-image: url("../img/slider_2.jpg");
 }
 
 #slide-hammer:checked ~ .slider-wrapper label[for="slide-hammer"],
@@ -1631,9 +1625,13 @@ display: none;
 
 
 .filter-input-checkbox:hover + label::before,
+.filter-input-checkbox:focus + label::before,
 .filter-input-checkbox:checked:hover + label::after,
+.filter-input-checkbox:checked:focus + label::after,
 .filter-input-radio:hover + label::before,
-.filter-input-radio:checked:hover + label::after {
+.filter-input-radio:focus + label::before,
+.filter-input-radio:checked:hover + label::after,
+.filter-input-radio:checked:focus + label::after {
   opacity: 1;
 }
 
