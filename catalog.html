@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -28,9 +29,9 @@
             <input type="search" id="search" placeholder="Поиск:">
             <svg class="icon-search" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"><path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
           </form>
-          <p class="bookmarks"><a href="#">Закладки: 0</a></p>
-          <p class="basket basket-inner"><a href="#">Корзина: 10</a></p>
-          <p class="checkout"><a href="#">Оформить заказ</a></p>
+          <a class="header-link bookmarks" href="#">Закладки: 0</a>
+          <a class="header-link basket-inner basket" href="#">Корзина: 10</a>
+          <a class="header-link checkout" href="#">Оформить заказ</a>
         </div>
       </div>
 
@@ -81,14 +82,12 @@
       <div class="main-wrapper container">
         <div class="main-top">
           <h1 class="page-title">Перфораторы</h1>
-          <section>
-            <ul class="breadcrumbs">
-              <li><a href="index.html"><img src="img/icon-home.svg" alt="Главная страница"></a></li>
-              <li><a href="#">Каталог</a></li>
-              <li><a href="#">Инструмент</a></li>
-              <li class="breadcrumbs-current"><a>Перфораторы</a></li>
-            </ul>
-          </section>
+          <ul class="breadcrumbs">
+            <li><a href="index.html"><img src="img/icon-home.svg" alt="Главная страница"></a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Инструмент</a></li>
+            <li class="breadcrumbs-current"><a>Перфораторы</a></li>
+          </ul>
         </div>
 
         <div class="catalog-wrapper">
@@ -157,12 +156,12 @@
             <section class="sorting">
               <h2>Сортировка:</h2>
               <ul class="option-list">
-                <li class="option-item sorting-item-active"><a href="#">По цене</a></li>
+                <li class="option-item"><a class="sorting-item-active" href="#">По цене</a></li>
                 <li class="option-item"><a href="#">По типу</a></li>
                 <li class="option-item"><a href="#">По функционалу</a></li>
               </ul>
               <ul class="value-list">
-                <li class="value-item sorting-item-active"><a class="size-up" href="#"><span class="visually-hidden">По возрастанию</span></a></li>
+                <li class="value-item"><a class="size-up sorting-item-active" href="#"><span class="visually-hidden">По возрастанию</span></a></li>
                 <li class="value-item"><a class="size-down" href="#"><span class="visually-hidden">По возрастанию</span></a></li>
               </ul>
             </section>
@@ -283,14 +282,12 @@
               </ul>
             </section>
 
-            <div class="pagination">
-              <ul class="pagination-list">
-                <li class="pagination-item pagination-item-active"><a class="button">1</a></li>
-                <li class="pagination-item"><a class="button" href="#">2</a></li>
-                <li class="pagination-item"><a class="button" href="#">3</a></li>
-                <li class="pagination-item"><a class="button" href="#">Следующая</a></li>
-              </ul>
-            </div>
+            <ul class="pagination-list">
+              <li class="pagination-item pagination-item-active"><a class="button">1</a></li>
+              <li class="pagination-item"><a class="button" href="#">2</a></li>
+              <li class="pagination-item"><a class="button" href="#">3</a></li>
+              <li class="pagination-item"><a class="button" href="#">Следующая</a></li>
+            </ul>
         </div>
 
         </div>
