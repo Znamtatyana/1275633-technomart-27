@@ -848,6 +848,7 @@ a
     font-size: 18px;
 
     margin: 0;
+    margin-top: 2px;
     margin-bottom: 124px;
 }
 
@@ -977,12 +978,18 @@ a
 {
     position: relative;
 
-    display: block;
+    display: flex;
+    flex-direction: column;
 
     width: 218px;
     margin-bottom: 20px;
 
     cursor: pointer;
+}
+
+.product-price
+{
+    margin-top: auto;
 }
 
 .offer-item .flag,
@@ -2381,7 +2388,7 @@ a.sorting-item-active::before
 
 .main-wrapper
 {
-    margin-bottom: 65px;
+    margin-bottom: 66px;
 }
 
 .inner-page .main-wrapper
@@ -2507,6 +2514,13 @@ a.sorting-item-active::before
 .footer-contact
 {
     padding-left: 3px;
+}
+
+.footer-contact p
+{
+    display: flex;
+
+    max-width: 326px;
 }
 
 .footer-bottom-wrapper
