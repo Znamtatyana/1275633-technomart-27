@@ -195,6 +195,10 @@ a
     background: transparent;
 }
 
+.search input::-webkit-input-placeholder,
+.search input::-moz-placeholder,
+.search input:-ms-input-placeholder,
+.search input::-ms-input-placeholder,
 .search input::placeholder
 {
     color: #fff;
@@ -488,8 +492,8 @@ a
 .user-name
 {
     max-width: 186px;
-    padding-left: 47px;
     padding-right: 36px;
+    padding-left: 47px;
 }
 
 .user-name svg
@@ -785,28 +789,32 @@ a
 {
     top: 0;
 
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
 }
 
 .slider-arrows-back::after
 {
     top: 18px;
 
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
 }
 
 .slider-arrows-next::before
 {
     top: 0;
 
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
 }
 
 .slider-arrows-next::after
 {
     top: 18px;
 
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
 }
 
 
@@ -1007,7 +1015,7 @@ a
 
     text-indent: -1000px;
 
-    background-image: url('../img/new-\ flag.png');
+    background-image: url('../img/new-flag.png');
     background-repeat: no-repeat;
     background-position: 0 0;
 }
@@ -1661,7 +1669,45 @@ a
 {
     display: block;
 
-    animation: linear come_up 0.6s;
+    -webkit-animation: linear come_up .6s;
+            animation: linear come_up .6s;
+}
+
+@keyframes come_up
+{
+    0%
+    {
+        -webkit-transform: translateY(100px);
+                transform: translateY(100px);
+    }
+    100%
+    {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+}
+
+.modal-show-close
+{
+    display: block;
+
+    -webkit-animation: linear come_down 1s forwards;
+            animation: linear come_down 1s forwards;
+}
+
+@keyframes come_down
+{
+    0%
+    {
+        -webkit-transform: translateY(0px);
+                transform: translateY(0px);
+    }
+
+    100%
+    {
+        -webkit-transform: translateY(1000px);
+                transform: translateY(1000px);
+    }
 }
 
 .modal-close
@@ -1695,12 +1741,14 @@ a
 
 .modal-close::before
 {
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
 }
 
 .modal-close::after
 {
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
 }
 
 .modal-feedback,
@@ -1716,15 +1764,6 @@ a
 .modal-feedback
 {
     margin-top: -215px;
-}
-
-@keyframes come_up {
-  0% {
-    transform: translateY(100px);
-  }
-  100% {
-    transform: translateY(0);
-  }
 }
 
 .modal-map
@@ -1762,6 +1801,51 @@ a
     background: url('../img/icon-mark.svg') no-repeat 81px 49px;
     background-color: #fff;
 }
+
+.modal-buy-show
+{
+    display: block;
+
+    -webkit-animation: increase_up .6s  ease-out;
+            animation: increase_up .6s  ease-out;
+}
+
+@keyframes increase_up
+{
+    0%
+    {
+        -webkit-transform: scale(0);
+                transform: scale(0);
+    }
+    100%
+    {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+}
+
+.modal-buy-show-close
+{
+    display: block;
+
+    -webkit-animation: increase_down .4s forwards;
+            animation: increase_down .4s forwards;
+}
+
+@keyframes increase_down
+{
+    0%
+    {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+    }
+    100%
+    {
+        -webkit-transform: scale(0);
+                transform: scale(0);
+    }
+}
+
 
 .form-feedback-wrapper
 {
@@ -1810,22 +1894,33 @@ a
     border-radius: 3px;
 }
 
-.feedback-input-error {
-  animation: stretching 0.8s 3;
+.feedback-input-error
+{
+    animation: stretching .8s 3;
 }
 
-@keyframes stretching {
-  0%, 100% {border-color: #ee3643;
-      }
-  50% {border-color: #ee3643;
-    transform: translate(-1px, -1px) scale(1.1);}
+@keyframes stretching
+{
+    0%,
+    100%
+    {
+        border-color: #ee3643;
+    }
+    50%
+    {
+        -webkit-transform: translate(-1px, -1px) scale(1.1);
+                transform: translate(-1px, -1px) scale(1.1);
 
+        border-color: #ee3643;
+    }
 }
 
 .feedback-item-text textarea
 {
     width: 430px;
     padding-bottom: 12px;
+
+    resize: none;
 }
 
 .button-wrapper
@@ -2177,8 +2272,9 @@ a
 .filter-input-checkbox:disabled + label,
 .filter-input-radio:disabled + label
 {
-    opacity: .4;
     cursor: no-drop;
+
+    opacity: .4;
 }
 
 
@@ -2227,7 +2323,7 @@ a
 .filter-button:hover,
 .filter-button:focus
 {
-      border-color: #bdc6ca;
+    border-color: #bdc6ca;
 }
 
 .filter-button:active
@@ -2320,7 +2416,8 @@ a
     top: -1px;
     right: 0;
 
-    transform: scaleY(1.6) rotate(180deg);
+    -webkit-transform: scaleY(1.6) rotate(180deg);
+            transform: scaleY(1.6) rotate(180deg);
 }
 
 a.sorting-item-active::before
@@ -2336,7 +2433,6 @@ a.sorting-item-active::before
 {
     opacity: 1;
     border-bottom: 6px solid #000;
-
 }
 
 .pagination-list
