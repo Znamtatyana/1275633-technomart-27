@@ -45,7 +45,7 @@ close.addEventListener("click", function (evt) {
   popup.classList.add("modal-show-close");
   for (var input of inputs) {
     input.classList.remove("feedback-input-error");
-  };
+  }
 });
 
 form.addEventListener("submit", function (evt) {
@@ -55,7 +55,7 @@ form.addEventListener("submit", function (evt) {
       input.classList.remove("feedback-input-error");
       input.offsetWidth = input.offsetWidth;
       input.classList.add("feedback-input-error");
-    };
+    }
   } else {
     if (isStorageSupport){
       localStorage.setItem("nameFeedback", nameFeedback.value);

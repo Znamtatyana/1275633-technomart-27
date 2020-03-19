@@ -195,10 +195,22 @@ a
     background: transparent;
 }
 
-.search input::-webkit-input-placeholder,
-.search input::-moz-placeholder,
-.search input:-ms-input-placeholder,
-.search input::-ms-input-placeholder,
+.search input::-webkit-input-placeholder
+{
+  color: #fff;
+}
+
+.search input::-moz-placeholder
+{
+  color: #fff;
+  opacity: 1;
+}
+
+.search input:-ms-input-placeholder
+{
+  color: #fff;
+}
+
 .search input::placeholder
 {
     color: #fff;

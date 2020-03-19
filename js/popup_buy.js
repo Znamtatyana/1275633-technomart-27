@@ -3,6 +3,8 @@ var popupBuy = document.querySelector(".modal-buy");
 var linkConinue = popupBuy.querySelector(".continue-buy");
 var closeBuy = popupBuy.querySelector(".modal-close");
 
+
+
 for (var linkBuy of linkBuys) {
   linkBuy.addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -15,7 +17,7 @@ linkConinue.addEventListener ("click", function (evt) {
   evt.preventDefault();
   popupBuy.classList.remove("modal-buy-show");
   popupBuy.classList.add("modal-buy-show-close");
-})
+});
 
 closeBuy.addEventListener ("click", function (evt) {
   evt.preventDefault();
